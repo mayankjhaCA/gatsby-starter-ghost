@@ -115,7 +115,7 @@ exports.createPages = async ({ graphql, actions }) => {
     pages.forEach(({ node }) => {
         // This part here defines, that our pages will use
         // a `/:slug/` permalink.
-        node.url = `/${node.slug}/`
+        node.url = `/`
 
         createPage({
             path: node.url,
